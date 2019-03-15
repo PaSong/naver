@@ -5,9 +5,37 @@
   <meta name="Referrer" content="origin"> <!-- 문서에서 전송된 요청에 첨부된 HTTP 헤더의 참조자(Referrer)를 제어함. content="origin" 문서의 origin을 전송함.-->
   <meta http-equiv="Content-Script-Type" content="text/javascript"> <!-- 속성의 값으로 서버나 사용자 에이전트의 작동방식을 변경할 수 있는 지시를 정의할 수 있음.-->
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1100"> <!-- name 속성은 문서 레벨의 메타데이터의 이름을 정의함. itemprop, http-equiv,charset 속성 중 하나라도 설정이 된 경우에는 설정할 수 없음.-->
+  <meta name="apple-mobile-web-app-title" content="NAVER">
+  <meta name="robots" content="index,nofollow"><!-- 인덱싱(수집된 문서를 검색엔진이 사용자에게 결과물을 좀 더 빠르고 슆게 제공할 수 있도록 색인 또는 인덱스하는 것)을 제어하는데 사용됨. content 속성으로 index,noindex,follow,nofollow-->
+                                               <!-- index,noindex: 페이지의 인덱스 여부를 말해줌 / follow,nofollow: 페이지내의 링크를 크롤러가 따라갈수 있느냐 없느냐 여부-->   
+  <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"> <!-- 페이지의 내용에 대한 짧고 정확한 요약을 담고 있음. Firefox,오페라와 같은 여러 브라우저에서는 이를 즐겨 찾기 페이지의 기본 설명으로 사용함.-->
+  <meta property="og:title" content="네이버"><!-- 사용자가 클릭 전에 미리 해당 웹사이틑 크롤러가 방문하여 HTML head의 메타 데이터 크롤링하여 미리보기 화면 생성 (그것의 제목)/ og=open graph-->
+                                             <!--og=open graph은 어떤 문서의 메타정보를 쉽게 표시하기 위해서 메타정보에 해당하는 제목,설명,문서의 타입,대표 URL등 다양한 요소들에 대해서 사람들이 통일해서 쓸 수 있도록 정의해놓은 프로토콜이며 페이스북에 의하여 기존의 다양한 메타 데이터 표기 방법을 참조하여 만들어졌음-->    
+  <meta property="og:url" content="https://www.naver.com/">
+  <meta property="og:image" content=""><!-- 보여주고 싶은 이미지주소-->
+  <meta property="og:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+  <meta name="twitter:card" content="summary"> <!--Twitter 플레이어 카드 태그-->
+  <meta name="twitter:title" content>
+  <meta name="twitter:url" content="https://www.naver.com/">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="">
+  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src=""></script>
   <title>NAVER</title>
+  <style>
+    #_nx_kbd .setkorhelp a {display:none;}
+  </style>
+  <script type="text/javascript" charset="utf-8" src=""></script>
+  <script type="text/javascript" charset="utf-8" src=""></script>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
 </head>
 <body>
   
