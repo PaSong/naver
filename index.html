@@ -45,7 +45,58 @@
   <!-- //스킵 내비게이션 -->
   <div id="PM_ID_ct" class="wrap">
     <!--헤더-->
-    <div class="header" role="banner"></div> <!--role은 어떠한 요소(p,span,div))도 스크린 리더가 버튼으로 인식하게 할 수 있슴.-->
+    <div class="header" role="banner"><!-- role은 banner표식 역할은 헤더에 적용되는 때, 용기 요소로 변환함. 페이지 별 콘텐츠가 아닌 사이트 중심 콘텐츠를 주로 포함하는 영역임. role은 어떠한 요소(p,span,div))도 스크린 리더가 버튼으로 인식하게 할 수 있슴.-->
+      <div class="special_bg">
+        <div class="area_flex">
+          <div class="area_logo">
+            <h1>
+              <a data-clk="top.logo" href="/"> <!--어느 엘리멘트나 data-로 시작하는 속성은 무엇이든 사용할 수 있슴. 화면에 안 보이게 글이나 추가 정보를 엘리멘트에 담아 놓을 수 있음.-->
+                <span class="naver_logo">네이버</span>
+              </a>
+            </h1>
+          </div><!--//area_logo-->
+          <div class="area_link">
+            <a data-clk="top.mkhome" href="http://help.naver.com..." class="al_favorite" class="al_favorite">
+              "네이버를 시작페이지로"
+              <span class="al_icon_link"></span>
+            </a>
+            <span class="al_bar"></span>
+            <a data-clk="top.jrnaver" href="http://jr.naver.com" class="al_jr">
+              <span class="blind">주니어네이버</span>
+              <span class="al_ico"></span>
+            </a>
+            <a data-clk="top.happybean" href="http://happybean.naver.com/main/SectionMain.nhn" class="al_happybean">
+              <span class="blind">해피빈</span>
+              <span class="al_ico"></span>
+            </a>
+          </div><!--//area_link-->
+          <div id="search" class="search">
+            <!--자동완성 입력창-->
+              <form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get">
+                <fieldset><!--웹 폼 내에서 <label>과 같은 여러 컨트롤을 그룹화 하는데 사용됨.양식의 관련 요소를 그룹화하는데 사용됨. 관련 요소 주위에 상자를 그림.-->
+                  <legend class="blind">검색</legend>
+                  <input type="hidden" id="sm" name="sm" value="top_hty"><!--type="hidden" 숨겨진 입력 필드를 정의함. 숨겨진 필드는 웹 개발자가 양식을 제출할 때 사용자가 보거나 수정할 수 없는 데이터를 포함. 숨겨진 필드는 양식을 제출할때 업데이트해야하는 데이터베이스 레코드를 저장함. 숨겨진 입력을 보안 양식으로 사용 하지 마십시오.-->
+                  <input type="hidden" id="fbm" name="fbm" value="0">
+                  <input type="hidden" id="acr" name="acr" value disabled="disabled"><!--disabled 속성은 부울 속성.<input>요소가 비활성화되어야한다고 지정함. 비활성화 된 입력 요소는 사용할 수 없으며 클릭할 수 없음.-->
+                  <input type="hidden" id="acq" name="acq" value disavled="disabled">
+                  <input type="hidden" id="qdt" name="qdt" value disavled="disabled">
+                  <input type="hidden" id="ie" name="id" value="utf8">
+                  <input type="hidden" id="acir" name="acir" value disabled="disabled">
+                  <input type="hidden" id="os" name="os" value disabled="disabled">
+                  <input type="hidden" id="bid" name="bid" value disabled="disabled">
+                  <input type="hidden" id="pkid" name="pkid" value disabled="disabled">
+                  <input type="hidden" id="eid" name="eid" value disabled="disabled">
+                  <input type="hidden" id="mra" name="mra" value disabled="disabled">
+                    
+                </fieldset>
+              </form>
+            <!--//자동완성 입력창-->
+          </div><!--//search-->
+          <div id="promotion11"></div>
+        </div><!--//area_flex-->
+      </div><!--//special_bg-->
+      <div class="section_navber"></div><!--//section_navber-->
+    </div>
     <!--//헤더-->
   </div>
 </body>
