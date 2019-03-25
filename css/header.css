@@ -1,0 +1,6 @@
+.wrap{position: relative; min-width:1100px; background:#f2f4f7; overflow:hidden;} /*min-with는 with 속성의 사용값이 자신의 값보다 작아지는걸 방지함*/
+.header{border-bottom:1px solid #d1d8e4;z-index:100;}
+.special_bg{border-bottom:1px solid #d1d8e4;}
+.area_flex{width:1080px;height:100%; margin:0 auto;}
+.area_logo{}
+
